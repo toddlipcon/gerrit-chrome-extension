@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "My Cool Extension",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://gerrit.cloudera.org/*"
+            ],
+            "js": ["jquery-3.2.1.min.js", "content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "inject.js",
+        "inject.css"
+    ]
+}
